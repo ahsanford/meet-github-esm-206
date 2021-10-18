@@ -89,6 +89,16 @@ If we want a caption for a figure, put an exclamation point, box parenthesis, th
 
 We'll also learn about `knitr::include_graphics` which lets you put images into documents.
 
+#### To send your edits back to R Github
+
+In the Git tab in the top right box, stage both of your files. i.e. select both boxes and hit the `commit` button that has papers and a check mark on it. Then type in a commit message to the box that pops up that descriptively says what you added in few words.
+
+You will see a message in the git tab next to a blue circled `I`. 'Your branch is ahead of 'origin/main' by commit. 
+
+- This is an indicator that you haven't actually sent the changes that you have made back to github. 
+- So we want to `push` to github by selecting the green up arrow in the git tab.
+- Now go back to github and refresh your repository. You will see your new changes there if you did it right!
+
 ###
 
 ----------
