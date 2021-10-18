@@ -8,11 +8,44 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+## Github
+
+In Github we have all the file folders we need for what we are doing [today](https://github.com/allisonhorst/meet-github-esm-206)
+
+First, we will make our own copy by using the `fork`button on github.
+
+- Once we fork, we will see our username alongside the name of the repository. Repository is often called `repo`.
+
+Next, we will `clone` the repo so that we can use, manipulate, and visualize data in Rstudio. Hit the green code button, then copy the HTTPS url. 
+
+Create a new Rproject. Select `version control` and then `clone git repository`. Paste your URL into the `repository URL` box. The project directory name will auto populate. Then selecte where you want your project to be stored on your computer.Then click create, and you will have your Rmarkdown document!
+
+
+
 ##### A note on this project:
 
 The organization of this document probably seems strange. That's because it's part of an entire multi-part lab for ESM 206, which students will create in multiple projects (but are combined here for easier sharing). Hence the weird unrelated pieces all put together in this project (students will create Parts 2 & 3 as separate projects).
 
 [Link to the Lab 4 prompt](https://docs.google.com/document/d/1KX6_bKA8BOO0NdsUviVi0HCT-q9iTCtTYsS1dGNQJfU/edit?usp=sharing)
+
+# Creating multiple tabs in an r markdown #
+
+You can see an example of tabs by clicking the `some_cool_animals.RMD` R markdown document and knitting.
+
+Use the following to create a tab: 
+
+- R will automatically rank these in order for your tabs dependent on the number of hastags you use. 
+
+**### Cool animal fun facts {.tabset .tabset-fade}**
+
+#### This is how to make a tab in Rmarkdown!
+
+If you clone a project from github, you should be able to just hit knit in Rstudio and everything will work. This is the same for the projects that YOU upload.
+
+You need to have a blank line above the tab code, then your hashtags, then a space. 
+
+Scroll down to the 'Ringtail cat' tab or example for more details and instructions about how to do these things.
 
 ### Cool animal fun facts {.tabset .tabset-fade}
 
@@ -45,6 +78,16 @@ The organization of this document probably seems strange. That's because it's pa
 - Pika are of order *Lagomorpha* (which also includes rabbits)
 - Pika live in high altitude talus slopes
 - American pika are already disappearing from the Sierra Nevada
+
+#### Ring-tailed Cats
+
+Here's where I want to have info on ringtails.
+
+If we want a caption for a figure, put an exclamation point, box parenthesis, then normal parenthesis. The file path to get the image goes in your parentheses. The file path should always start in your rmarkdown folder like the data folder in previous labs.
+
+![Ringtail Cat (courtesy of VA zoo)](img/ringtail_cat.jpg)
+
+We'll also learn about `knitr::include_graphics` which lets you put images into documents.
 
 ###
 
